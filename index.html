@@ -3,40 +3,39 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MineGame v2</title>
+<title>MineGame Advanced</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>MineGame ⛏</h1>
+      <h1>MineGame Advanced ⛏</h1>
       <div class="status">
         <div id="balance">Монет: 0</div>
+        <div id="energy">Энергия: 20/20</div>
         <div id="pickaxe">Кирка: Деревянная</div>
       </div>
     </header>
     <main>
-      <div class="game-area">
-        <div class="hud">
-          <button id="mineBtn" class="big">Добыть ⛏</button>
-          <button id="sellAllBtn" class="big" style="margin-top:10px;">Продать всё 💰</button>
-          <div class="info">Нажимай "Добыть", чтобы собрать руду, затем продавай.</div>
-        </div>
-        <div class="inventory">
-          <h3>Инвентарь</h3>
-          <div id="inventoryList"></div>
-        </div>
-        <div class="shop">
-          <h3>Магазин кирок</h3>
-          <div id="shopList"></div>
-        </div>
+      <div class="hud">
+        <button id="digBtn" class="big">Копать вниз ⛏</button>
+        <button id="sellBtn" class="big">Продать ресурсы 💰</button>
+        <div id="timer">Время копки: 0</div>
+        <div id="eventLog"></div>
       </div>
-      <div class="log" id="log"></div>
+      <div class="inventory">
+        <h3>Инвентарь</h3>
+        <div id="inventoryList"></div>
+      </div>
+      <div class="shop">
+        <h3>Магазин кирок</h3>
+        <div id="shopList"></div>
+      </div>
     </main>
     <footer>
       <small>Сохранение прогресса: <span id="saveState">Автоматически</span></small>
     </footer>
   </div>
-  <script src="game.js"></script>
+<script src="game.js"></script>
 </body>
 </html>
