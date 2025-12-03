@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MineGame — Обновлённая версия</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MineGame ⛏</h1>
+      <div class="status">
+        <div id="balance">Монет: 0</div>
+        <div id="pickaxe">Кирка: Деревянная</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="game-area">
+        <div class="hud">
+          <button id="mineBtn" class="big">Добыть ⛏</button>
+          <div class="info">Нажимай кнопку, чтобы добывать руду</div>
+        </div>
+
+        <div class="inventory">
+          <h3>Инвентарь</h3>
+          <div id="inventoryList"></div>
+        </div>
+
+        <div class="shop">
+          <h3>Магазин кирок</h3>
+          <div id="shopList"></div>
+        </div>
+      </div>
+
+      <div class="log" id="log"></div>
+    </main>
+
+    <footer>
+      <small>Сохранение прогресса: <span id="saveState">Автоматически</span></small>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
