@@ -1,32 +1,7 @@
-*{box-sizing:border-box}
-:root{
-  --bg:#0f1720;
-  --panel:#111827;
-  --muted:#94a3b8;
-  --accent:#f59e0b;
-  --glass: rgba(255,255,255,0.03);
-}
-body{
-  margin:0;
-  font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
-  background:linear-gradient(180deg,#071025 0%, #081228 100%);
-  color:#e6eef8;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  padding:18px;
-}
-.container{max-width:980px;margin:18px auto;padding:20px;background:var(--glass);border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-header h1{margin:0;font-size:22px;letter-spacing:0.4px}
-.status{display:flex;gap:12px;color:var(--muted);font-size:14px}
-.game-area{display:grid;grid-template-columns:1fr 300px;gap:18px}
-.hud{background:var(--panel);padding:16px;border-radius:10px}
-.big{display:inline-block;padding:14px 18px;border-radius:10px;border:0;background:linear-gradient(90deg,#15324a,#0f5a8a);color:white;font-weight:700;font-size:16px;cursor:pointer}
-.info{margin-top:10px;color:var(--muted);font-size:13px}
-.inventory,.shop{background:var(--panel);padding:12px;border-radius:10px}
-.inventory h3,.shop h3{margin:0 0 8px 0;font-size:16px}
-#inventoryList>div,#shopList>div{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;margin-bottom:6px;background:rgba(255,255,255,0.02);}
-.small-btn{padding:6px 8px;border-radius:7px;border:0;background:rgba(255,255,255,0.04);cursor:pointer}
-.log{margin-top:16px;background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;min-height:80px;color:var(--muted);font-size:13px;overflow:auto}
-footer{margin-top:12px;color:var(--muted);font-size:12px;text-align:right}
-`
+*{box-sizing:border-box} 
+body{margin:0;font-family:Arial,sans-serif;background:#0f1720;color:#e6eef8;padding:18px} 
+.container{max-width:980px;margin:auto;padding:20px;background:rgba(255,255,255,0.03);border-radius:12px} 
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px} 
+.big{padding:12px 18px;border-radius:10px;border:none;background:#0f5a8a;color:white;cursor:pointer;margin-bottom:6px} 
+.inventory,.shop{background:rgba(255,255,255,0.03);padding:12px;border-radius:10px;margin-top:10px} 
+.log{margin-top:16px;background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;min-height:80px;color:#94a3b8;overflow:auto;font-size:13px}
